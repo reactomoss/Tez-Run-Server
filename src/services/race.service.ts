@@ -1,6 +1,6 @@
 import { Quest, QuestModel } from 'database/models/quest.model';
 
-export const createOrUpdateQuestState = async (questInfo: Quest) => {
+export const updateRaceState = async (questInfo: Quest) => {
   let quest = await QuestModel.findOne({
     walletAddress: questInfo.walletAddress,
     questId: questInfo.questId,
